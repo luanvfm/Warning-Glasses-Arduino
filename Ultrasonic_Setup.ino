@@ -4,7 +4,7 @@
 #define ECHO_DIR 7 
 #define BUZZER_DIR 2
 #define BUZZER_ESQ 3
-//TODO: Definir funcao de distancia e emitir som
+
 
 //a função tone([buzzer], 1000) -> OBS: esse mil é = 1000Hz) essa funcao tone() chega até 65000Hz
 // da pra controlar o tempo do buzzer com delay()
