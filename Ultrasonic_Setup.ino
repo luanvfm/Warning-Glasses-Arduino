@@ -6,9 +6,6 @@
 #define BUZZER_ESQ 3
 
 
-//a função tone([buzzer], 1000) -> OBS: esse mil é = 1000Hz) essa funcao tone() chega até 65000Hz
-// da pra controlar o tempo do buzzer com delay()
-//noTone(buzzer)
 int lerDistancia(int pinoTrig, int pinoEcho, String nomeSensor) {
   // Loop que o som vai ser disparado
   digitalWrite(pinoTrig, LOW); 
@@ -41,10 +38,14 @@ int lerDistancia(int pinoTrig, int pinoEcho, String nomeSensor) {
 }
 
 void emitirSom(int distancia, int pinoBuzzer) {
-/* Se a distancia for maior que 1 metro, ele apita. 
+/* Se a distancia for menor que 1 metro, ele apita. 
  a frequencia do quanto apita é definida pela distancia do objeto */
+  
+/* A função tone([buzzer], 1000) -> OBS: esse mil é = 1000Hz) essa funcao tone() chega até 65000Hz
+ O tempo do buzzer é controlado com delay().
+ noTone(buzzer) faz o som parar.*/
   if (distancia < 100 && distancia > 0) { 
-    tone(pinoBuzzer, 2000); //tone([buzzer], 1000Hz)
+    tone(pinoBuzzer, 2000); 
     delay(50);
     noTone(pinoBuzzer);
     delay(distancia * 2);
