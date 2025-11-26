@@ -26,7 +26,7 @@ The system independently measures the distance of objects to the left and right.
 - 📡 **Dual Detection:** Simultaneous monitoring of both left and right sides.
 - 🔊 **Spatial Feedback:** The left buzzer signals obstacles on the left, and the right buzzer signals for the right.
 - **Variable Rhythm:**
-- - Safe (> 1m): Silence.
+  - Safe (> 1m): Silence.
   - Approaching (1m - 50cm): Slow beeps.
   - Danger (< 30cm): Frenetic, fast beeps.
 
