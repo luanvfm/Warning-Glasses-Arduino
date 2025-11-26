@@ -5,7 +5,7 @@
 ![Status](https://img.shields.io/badge/Status-Functional-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-> **Assistive Technology:** A wearable device that aids in obstacle detection through spatial audio feedback.
+> **Assistive Technology:** A wearable device that aids people who are blind in obstacle detection through spatial audio feedback.
 
 ## 📸 Demo
 
