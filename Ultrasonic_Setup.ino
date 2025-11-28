@@ -1,9 +1,9 @@
-#define TRIG_ESQ 9 // Dando o nome "TRIG_ESQ" para o pino 9
-#define ECHO_ESQ 10 // Dando o nome "ECHO_ESQ" para o pino 10
-#define TRIG_DIR 8 
-#define ECHO_DIR 7 
-#define BUZZER_DIR 2
-#define BUZZER_ESQ 3
+#define TRIG_ESQ 3 // Dando o nome "TRIG_ESQ" para o pino 3
+#define ECHO_ESQ 2 // Dando o nome "ECHO_ESQ" para o pino 2
+#define TRIG_DIR 6 
+#define ECHO_DIR 5 
+#define BUZZER_DIR 13
+#define BUZZER_ESQ 12
 
 
 int lerDistancia(int pinoTrig, int pinoEcho, String nomeSensor) {
@@ -45,7 +45,7 @@ void emitirSom(int distancia, int pinoBuzzer) {
  O tempo do buzzer é controlado com delay().
  noTone(buzzer) faz o som parar.*/
   if (distancia < 100 && distancia > 0) { 
-    tone(pinoBuzzer, 2000); 
+    tone(pinoBuzzer, 1000); 
     delay(50);
     noTone(pinoBuzzer);
     delay(distancia * 2);
